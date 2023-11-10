@@ -35,7 +35,7 @@ public class QueueNode <T> {
         }
 
 
-        public void setchild(QueueNode n) {
+        public void setChild(QueueNode n) {
             child = n;
         }
 
