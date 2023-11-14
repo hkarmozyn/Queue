@@ -1,7 +1,7 @@
 public class QueueNode <T> {
 
         private T data; //Data stored in the node
-        private QueueNode child; //Reference to the parent node
+        private QueueNode<T> child; //Reference to the parent node
 
         //Default constructor
         public QueueNode() {
@@ -14,7 +14,7 @@ public class QueueNode <T> {
         }
 
         //Constructor that sets data, parent, and child
-        public QueueNode(T data, QueueNode child) {
+        public QueueNode(T data, QueueNode<T> child) {
             this.data = data;
             this.child = child;
         }
@@ -30,12 +30,12 @@ public class QueueNode <T> {
         }
 
 
-        public QueueNode getChild() {
+        public QueueNode<T> getChild() {
             return child;
         }
 
 
-        public void setChild(QueueNode n) {
+        public void setChild(QueueNode<T> n) {
             child = n;
         }
 
@@ -45,7 +45,7 @@ public class QueueNode <T> {
         }
 
         //Compares the data of the node with the data of another node 'n'
-        public boolean equals(QueueNode n) {
+        public boolean equals(QueueNode<T> n) {
             return this.data.equals(n.getData());
         }
     }
