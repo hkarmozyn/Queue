@@ -1,3 +1,8 @@
+/*
+HK
+11/17/23
+CZ
+ */
 public class QueueNode <T> {
 
         private T data; //Data stored in the node
